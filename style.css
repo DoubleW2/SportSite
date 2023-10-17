@@ -1,11 +1,37 @@
 html{
-    background-color: black;
+    background-color: #D6D6D6;
 }
 .flex
 {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
+
+button
+{
+    border: none;
+}
+
 .flex #item{
-    color: blue;
-    flex-direction: column;
+    flex: 1 1 auto;
+
+    color: #19204E;
+    background-color: #DF1B3F;
+
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 5px;
+
+    border-radius: 15px;
+
+    font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+    font-size: medium;
+}
+.flex #icon{
+    height: 50px;
+    width: 50px;
+    align-content: center;
 }
