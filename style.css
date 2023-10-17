@@ -1,0 +1,11 @@
+html{
+    background-color: black;
+}
+.flex
+{
+    flex-direction: column;
+}
+.flex #item{
+    color: blue;
+    flex-direction: column;
+}
