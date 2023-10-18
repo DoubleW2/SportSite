@@ -1,6 +1,8 @@
 html{
     background-color: #D6D6D6;
 }
+
+/*Flex-box*/
 .flex
 {
     display: flex;
@@ -13,12 +15,14 @@ html{
 button
 {
     border: none;
+    box-shadow: 0px 0px 1px 1px #DF1B3F;
 }
 
-.flex #item{
+/*Кнопки (основное описание)*/
+.flex .button{
     flex: 1 1 auto;
 
-    color: #19204E;
+    color: #16907e;
     background-color: #DF1B3F;
 
     height: 50px;
@@ -28,10 +32,27 @@ button
     border-radius: 15px;
 
     font-family: "Comic Sans MS", "Comic Sans", sans-serif;
-    font-size: medium;
+    font-size: large;
 }
+
+/*Эффект выделения при наведения кнопки*/
+.flex .button:hover{
+    background-color: #992a3e;
+}
+
+/*Иконка*/
 .flex #icon{
     height: 50px;
     width: 50px;
     align-content: center;
+}
+
+/*Масштабирование (адаптивная верстка)*/
+@media screen and (max-width: 600px) {
+    .flex{
+        flex-direction: column;
+    }
+    .flex #icon{
+        visibility: hidden;
+    }
 }
