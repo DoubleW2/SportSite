@@ -11,11 +11,32 @@ html{
     font-family: "Comic Sans MS", "Comic Sans", sans-serif;
     font-size: large;
 }
-.flex-content .siteImage{
+.flex-content .infoNext{
+    font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+    font-size: large;
+    align-content: flex-end;
+}
+.flex-content #siteImage1{
     width: 300px;
     height: 200px;
     padding-top: 10px;
     margin-left: 20px;
+}
+.flex-content #siteImage2{
+    width: 300px;
+    height: 200px;
+    padding-top: 10px;
+    margin-right: 20px;
+}
+.flex-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-table table {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15px;
 }
 
 /*Flex-box*/
@@ -38,7 +59,7 @@ button
 .flex .button{
     flex: 1 1 auto;
 
-    color: #16907e;
+    color: #ffffff;
     background-color: #DF1B3F;
 
     height: 50px;
@@ -70,5 +91,21 @@ button
     }
     .flex #icon{
         visibility: hidden;
+    }
+    .flex-content #siteImage1{
+        width: 200px;
+        height: 100px;
+        float: right;
+    }
+    .flex-content #siteImage2{
+        width: 200px;
+        height: 100px;
+        float: left;
+    }
+    .flex-content .info{
+        font-size: medium;
+    }
+    .flex-content .infoNext{
+        font-size: medium;
     }
 }
